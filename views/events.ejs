@@ -1,12 +1,27 @@
 <%- include("partials/header"); %>
     <!-- <div id="calendar"></div> -->
     <div class="events">
-        <h1>Past Events</h1>
+        <div class="events__top">
+            <h1 data-aos="fade-right">SOCH Events 🎉</h1>
+            <div data-aos="fade-right" class="underline"></div>
+            <h6 data-aos="fade-right">
+                We are always looking forward to bringing the best for art and writing enthusiasts! 😀
+            </h6>
+            <div class="emoji_container">
+                <img class="emoji-1" src="Assets/emoji (1).svg" alt="">
+                <img class="emoji-2" src="Assets/emoji (2).svg" alt="">
+                <img class="emoji-3" src="Assets/emoji (3).svg" alt="">
+            </div>
+        </div>
+        <!-- <hr class="hr-text" data-content=""></hr> -->
+        <h1 data-aos="fade-right">Past Events</h1>
+        <div data-aos="fade-right" class="underline"></div>
+        <h4 data-aos="fade-right">Know more about our past held events.</h4>
         <div class="event_container">
             <% for(var i=0; i<6; i++) { %>
                 <div data-aos="fade-down" class="item-container">
                     <div class="img-container">
-                        <img src="/Assets/temp-event.png" alt="Event image">
+                        <img src="/Assets/temp-event.png" alt="Event image" />
                     </div>
                     <div class="body-container">
                         <div class="overlay"></div>
@@ -25,12 +40,13 @@
                                     Sat, Sep 19, 10:00 AM
                                 </p>
                                 <p class="info description">
-                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo assumenda quidem
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo
+                                    assumenda quidem
                                     <span>more...</span>
                                 </p>
                             </div>
                         </div>
-                        <button class="action">Book it</button>
+                        <button class="action">Register</button>
                     </div>
                 </div>
                 <% } %>

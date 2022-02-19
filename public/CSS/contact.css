@@ -21,42 +21,48 @@
 .message-illust {
     width: 55%;
     position: absolute;
-    bottom: -25vh;
+    bottom: -27vh;
     left: 24%;
 }
-.contact_banner h1, .contact_banner h6 {
+.contact_banner h1, .contact_banner h6,
+.events__top h1, .events__top h6 {
     margin: 0;
     text-align: center;
     color: var(--dark-blue);
 }
-.contact_banner h1{
-    padding: 5vh 0 2vh;
+.contact_banner h1,
+.events__top h1{
+    padding: 5vh 0 0;
 }
-.contact_banner h6{
+.contact_banner h6, 
+.events__top h6 {
     font-weight: 500;
     font-size: .8rem;
 }
 .form_container{
     width: 40%;
-    margin: 20vh auto 8vh;
+    margin: 23vh auto 8vh;
     text-align: center;
     border-radius: 4vh;
     padding: 2% 0;
-    color: var(--purple);
+    color: #504c81;
     box-shadow: 0 0 10px 0px rgba(0, 0, 0, 0.068);
 }
 .form_container h2{
-    color: var(--purple);
+    color: #504c81;
 }
 .form-group{
     background: #dedbfc52;
     width: 90%;
     min-height: 6vh;
     border-radius: 1vh;
-    margin: 1vh auto;
+    margin: 2vh auto;
     display: flex;
     align-items: center;
     border-bottom: .2vw solid var(--purple);
+}
+form{
+    margin-top: 4vh;
 }
 .form-group label{
     width: 100%;
@@ -85,6 +91,7 @@
     cursor: pointer;
     font-weight: 600;
     font-size: 1.2rem;
+    margin: 2vh 0;
 }
 .contact-btn:hover{
     background-color: var(--bright-pink);
