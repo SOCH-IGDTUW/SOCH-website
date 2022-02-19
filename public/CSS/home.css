@@ -15,14 +15,21 @@
   background-color: var(--yellow);
   color: var(--dark);
 }
+
+/* =========== MAIN CONTAINER =========== */
+
 main {
   min-height: 100vh;
 }
+
+/* ============== HEADER =============== */
+
 .heading {
   text-align: center;
   background-image: url("/Assets/SOCH-bg-final.png");
   min-height: 100vh;
   background-size: cover;
+  /* background-repeat: no-repeat; */
   display: flex;
 }
 .heading h1,
@@ -33,7 +40,11 @@ main {
 }
 .heading h1 {
   font-size: 3rem;
+  margin-bottom: 2vh;
   letter-spacing: 4px;
+}
+.main-banner{
+  width: 40vw;
 }
 .heading p {
   font-weight: 500;
@@ -69,6 +80,9 @@ main {
 .heading h3 {
   color: #81b1c0;
 }
+
+/* =========== TEAMS =========== */
+
 .teams {
   text-align: center;
   width: 80%;
@@ -95,7 +109,7 @@ main {
   box-shadow: 0px 13px 20px -10px rgba(0, 0, 0, 0.404);
   border-radius: 2vh;
   position: absolute;
-  padding: 10% 3vw;
+  padding: 8% 3vw;
 }
 .team-card-wrap {
   display: flex;
@@ -118,7 +132,7 @@ main {
   background: var(--purple);
 }
 .team-icon {
-  width: 10vh;
+  width: 15vh;
 }
 .team-card {
   padding: 0 2vh;
@@ -128,14 +142,17 @@ main {
   font-family: var(--font-round);
   font-size: 1rem;
   font-weight: 600;
+  margin: 2vh 0;
 }
 .team-card p {
   color: var(--dark-blue);
   font-family: var(--font-sans);
   font-weight: 400;
   font-size: 0.8rem;
-  margin-top: 2vh;
 }
+
+/* =========== ABOUT =========== */
+
 .about {
   background-color: var(--dark-blue);
   min-height: 90vh;
@@ -168,8 +185,7 @@ main {
   /* border-radius: 2vh; */
   border: none;
   border-radius: 40px 10px;
-  /* background: gold; */
-  width: 40%;
+  width: 50%;
   line-height: 5vh;
   height: 100%;
   padding: 4% 4% 3%;
@@ -179,7 +195,7 @@ main {
   font-weight: bold;
 }
 
-/* MEDIA QUERIES */
+/* =========== MEDIA QUERIES =========== */
 
 @media (max-width: 1024px) {
   .team-card-wrap {

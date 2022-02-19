@@ -1,23 +1,24 @@
 <%- include("partials/header"); %>
-    <div id="calendar"></div>
+    <!-- <div id="calendar"></div> -->
     <div class="events">
+        <h1>Past Events</h1>
         <div class="event_container">
             <% for(var i=0; i<6; i++) { %>
-                <div class="item-container">
+                <div data-aos="fade-down" class="item-container">
                     <div class="img-container">
                         <img src="/Assets/temp-event.png" alt="Event image">
                     </div>
                     <div class="body-container">
                         <div class="overlay"></div>
                         <div class="event-info">
-                            <p class="title">EVENT NAME</p>
+                            <p class="title">Formidable Anecdote</p>
                             <div class="separator"></div>
-                            <p class="info">LOCATION</p>
+                            <p class="info">Story writing challenge</p>
                             <p class="price">Free</p>
                             <div class="additional-info">
                                 <p class="info">
                                     <i class="fas fa-map-marker-alt"></i>
-                                    Grand Central Terminal
+                                    Google Meet
                                 </p>
                                 <p class="info">
                                     <i class="far fa-calendar-alt"></i>
@@ -25,14 +26,14 @@
                                 </p>
                                 <p class="info description">
                                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo assumenda quidem
-                                    neque ducimus non aperiam exercitationem! <span>more...</span>
+                                    <span>more...</span>
                                 </p>
                             </div>
                         </div>
                         <button class="action">Book it</button>
                     </div>
                 </div>
-            <% } %>
+                <% } %>
         </div>
     </div>
     <%- include("partials/footer"); %>
