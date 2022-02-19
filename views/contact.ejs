@@ -1,5 +1,45 @@
 <%- include("partials/header"); %>
-<div class="contact">
-    contact
-</div>
-<%- include("partials/footer"); %>
+    <div class="contact">
+        <div class="contact_banner">
+            <h1 data-aos="fade-right">Let's Chat 💬</h1>
+            <div data-aos="fade-right" class="underline"></div>
+            <h6 data-aos="fade-right">
+                We would love to communicate even if you have suggestions, want to
+                collaborate or simply want to say hi! 😀
+            </h6>
+            <img class="message-illust" src="Assets/message.svg" alt="">
+        </div>
+        <div data-aos="fade-down" class="form_container">
+            <h2>Contact Us</h2>
+            <div style="background-color: var(--bright-pink);" class="underline"></div>
+            <form>
+                <div data-aos="zoom-in-up" class="form-group">
+                    <label for="text">
+                        <i class="fa-solid fa-pen"></i>
+                        <input type="text" name="name" required placeholder="Enter Name" id="" />
+                    </label>
+                </div>
+                <div data-aos="zoom-in-up" class="form-group">
+                    <label for="email">
+                        <i class="fa-solid fa-at"></i>
+                        <input type="email" name="email" required placeholder="Enter Email" id="" />
+                    </label>
+                </div>
+                <div data-aos="zoom-in-up" class="form-group">
+                    <label for="text">
+                        <i class="fa-solid fa-envelope-open-text"></i>
+                        <input type="text" name="subject" required placeholder="Enter Subject" id="" />
+                    </label>
+                </div>
+                <div data-aos="zoom-in-up" class="form-group">
+                    <label>
+                        <i class="fa-solid fa-message"></i>
+                        <textarea name="message" required id="" cols="30" placeholder="Drop your message here."
+                            rows="10"></textarea>
+                    </label>
+                </div>
+                <button class="contact-btn" type="submit">Send <i class="fa-solid fa-inbox-out"></i></button>
+            </form>
+        </div>
+    </div>
+    <%- include("partials/footer"); %>
