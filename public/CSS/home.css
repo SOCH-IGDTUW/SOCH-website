@@ -209,6 +209,9 @@ main {
     width: auto;
   }
   .about .container {
-    padding-top: 55vh;
+    padding-top: 110vh;
+  }
+  .underline {
+    height: 0.6vw;
   }
 }

@@ -52,10 +52,12 @@ body {
 .emoji_container > img {
   width: 15vw;
 }
+.outer-calendar h1,
 .events > h1 {
   text-align: center;
   margin-top: 16vh;
 }
+.outer-calendar h4,
 .events > h4 {
   text-align: center;
   color: #c2e3ec;
@@ -114,7 +116,8 @@ body {
 
 .title,
 .price {
-  color: var(--dark-blue);
+  /* color: var(--dark-blue); */
+  color: var(--purple);
   font-size: 1em;
   font-weight: bold;
   letter-spacing: 1px;
@@ -132,7 +135,7 @@ body {
 .separator {
   width: 20%;
   height: 0.2vw;
-  background-color: var(--purple);
+  background-color: var(--bright-pink);
   margin: 6px 0;
 }
 
@@ -150,7 +153,7 @@ body {
 }
 
 .info i {
-  color: var(--dark-blue);
+  color: var(--purple);
   font-size: 1.1em;
   margin-right: 4px;
 }
@@ -185,4 +188,22 @@ body {
 
 .action:hover {
   background-color: rgba(255, 255, 255, 0.2);
+}
+
+@media (max-width: 1024px) {
+  .emoji_container{
+    bottom: 38%;
+    left: 1%;
+  }
+  .emoji_container > img {
+    width: 32vw;
+  }
+  .events__top > h6,
+  .contact_banner > h6 {
+    width: 90%;
+    margin: auto;
+  }
+  .separator {
+    height: .6vw;
+  }
 }
