@@ -96,3 +96,14 @@ form{
 .contact-btn:hover{
     background-color: var(--bright-pink);
 }
+
+@media (max-width: 1024px) {
+    .message-illust {
+        width: 80%;
+        left: 10%;
+        bottom: -9vh;
+    }
+    .form_container {
+        width: 90%;
+    }
+}

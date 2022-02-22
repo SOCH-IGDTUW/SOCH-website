@@ -13,8 +13,8 @@ app.get("/", function(req,res){
     res.render("home")
 });
 
-app.get("/about", function(req,res){
-    res.render("about")
+app.get("/gallery", function(req,res){
+    res.render("gallery")
 });
 
 app.get("/events", function(req,res){
