@@ -1,21 +1,5 @@
-
-
-html {
-    font-family: 'Open Sans', sans-serif;
-}
-
-/* body {
-    background: url("Assets/team-bg.png") no-repeat fixed 100%;
-    background-size: cover;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-} */
-
 .team {
-    background: url("Assets/team-bg.png") no-repeat fixed 100%;
+    background: url("/Assets/team-bg.png") no-repeat fixed 100%;
     background-size: cover;
     display: flex;
     flex-direction: column;
@@ -24,15 +8,23 @@ html {
     min-height: 100vh;
 }
 
-h1 {
+/* .team h1 {
     font-size: 2.75rem;
     font-weight: 1000;
     margin-bottom: 50px;
     color: #071E3D;
     font-family: 'Quicksand', sans-serif;
+} */
+
+.team-illust {
+    width: 20%;
+    position: absolute;
+    left: 38%;
+    bottom: 13%;
 }
 
 .team-table {
+    margin-top: 10%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -119,10 +111,11 @@ h1 {
 
 i:hover .linkedIn {
     -webkit-animation: fadein 1s;
+    animation: fadein 1s;
 }
 
 .media:hover .team-img {
-    filter:blur(0.5px) brightness(80%);
+    filter: blur(0.5px) brightness(80%);
     box-shadow:0 0 16px #C2E3EC;
 }
 
@@ -132,6 +125,10 @@ i:hover .linkedIn {
 
 
 
+@keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
 @-webkit-keyframes fadein {
     from { opacity: 0; }
     to   { opacity: 1; }

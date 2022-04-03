@@ -1,16 +1,3 @@
-@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap");
-:root {
-  --font-sans: "Poppins", sans-serif;
-  --font-serif: "Playfair Display", serif;
-  --font-mont-sans: "Montserrat", sans-serif;
-  --font-round: "Quicksand", sans-serif;
-  --bright-pink: #ff577f;
-  --purple: #6f69ac;
-  --light-blue: #c2e3ec;
-  --yellow: #fce38a;
-  --peach2: #ff9a8c;
-  --dark-blue: #071e3d;
-}
 .contact_banner{
     background-image: url("../Assets/contact-top.png");
     width: 100%;

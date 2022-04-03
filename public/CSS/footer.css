@@ -1,14 +1,3 @@
-:root{
-    --font-sans: 'Poppins', sans-serif;
-    --font-serif: 'Playfair Display', serif; 
-    --blue-grey: #374a50;
-    --cyan: #00adb5;
-    --pink: #d8849e;
-    --peach: #e9a6a6;
-    --salmon: #fdaf7c;
-    --blue: #4d56a2;
-    --grey: #96afb6;
-}
 .footer-logo{
     border-radius: 50%;
     width: 5vw;
