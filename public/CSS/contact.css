@@ -12,17 +12,20 @@
     left: 24%;
 }
 .contact_banner h1, .contact_banner h6,
-.events__top h1, .events__top h6 {
+.events__top h1, .events__top h6 ,
+.gallery__top h1, .gallery__top h6{
     margin: 0;
     text-align: center;
     color: var(--dark-blue);
 }
 .contact_banner h1,
-.events__top h1{
+.events__top h1,
+.gallery__top h1{
     padding: 5vh 0 0;
 }
 .contact_banner h6, 
-.events__top h6 {
+.events__top h6 ,
+.gallery__top h6{
     font-weight: 500;
     font-size: .8rem;
 }
