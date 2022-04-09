@@ -11,6 +11,12 @@
   --peach2: #ff9a8c;
   --dark-blue: #071e3d;
 }
+
+
+::selection {
+  background-color: var(--purple);
+  color: white;
+}
 ::-webkit-scrollbar {
   width: 1vh;
 }
@@ -25,6 +31,8 @@
 ::-webkit-scrollbar-thumb:hover {
   background: #fc8374;
 }
+
+
 body {
   margin: 0;
   padding: 0;
@@ -191,9 +199,10 @@ nav ul li a:hover {
 
 /* Style the dropdown button to fit inside the topnav */
 .dropdown .dropbtn {
-  font-size: 17px;
+  font-size: 1vw;
   border: none;
   outline: none;
+  font-weight: 500;
   color: #071e3d;
   padding: 14px 16px;
   background-color: inherit;
@@ -210,10 +219,11 @@ nav ul li a:hover {
 .dropdown-content {
   display: none;
   position: absolute;
-  background-color: white;
+  background-color: var(--light-blue);
   min-width: 160px;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   z-index: 1;
+  border-radius: .7vw;
 }
 
 /* Style the links inside the dropdown */
@@ -230,8 +240,9 @@ nav ul li a:hover {
 display: block;
 }
 .dropdown-content :hover{
-  border-bottom: 4px solid #e91e63;
+  border-bottom: 3px solid #e91e63;
   transition: border-bottom 0.4s;
+  border-radius: .7vw;
 }
 /* MEDIA QUERIES */
 
@@ -251,6 +262,7 @@ display: block;
     justify-content: space-evenly;
     align-items: center;
     left: 5%;
+    -webkit-backdrop-filter: blur(1px);
     backdrop-filter: blur(1px);
     transition: top 1s;
     box-shadow: 0px 13px 20px -10px rgba(0, 0, 0, 0.404);
@@ -258,6 +270,11 @@ display: block;
   nav ul li a {
     font-size: 1rem;
     color: white;
+  }
+  .dropbtn {
+    font-size: 1rem !important; 
+    color: white !important; 
+    padding: 0 !important; 
   }
 
   .toggle-button {
