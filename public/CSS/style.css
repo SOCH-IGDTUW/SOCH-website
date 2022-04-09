@@ -184,7 +184,55 @@ nav ul li a:hover {
   transition: 1s;
   top: 13vh;
 }
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
 
+/* Style the dropdown button to fit inside the topnav */
+.dropdown .dropbtn {
+  font-size: 17px;
+  border: none;
+  outline: none;
+  color: #071e3d;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+  
+}
+.dropdown .dropbtn :hover{
+  border-bottom: 4px solid #071e3d;
+  transition: border-bottom 0.4s;
+}
+
+/* Style the dropdown content (hidden by default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: white;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+/* Style the links inside the dropdown */
+.dropdown-content a {
+  float: none;
+  color: #071e3d;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+/* Show the dropdown menu when the user moves the mouse over the dropdown button */
+.dropdown:hover .dropdown-content {
+display: block;
+}
+.dropdown-content :hover{
+  border-bottom: 4px solid #e91e63;
+  transition: border-bottom 0.4s;
+}
 /* MEDIA QUERIES */
 
 @media (max-width: 1024px) {
