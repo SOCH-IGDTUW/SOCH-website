@@ -39,6 +39,8 @@ maximum-scale=1.0, user-scalable=no" />
   <link rel="stylesheet" href="CSS/events.css">
   <link rel="stylesheet" href="CSS/footer.css" />
   <link rel="stylesheet" href="CSS/calendar.css" />
+  <link rel="stylesheet" href="CSS/gallery.css"/>
+  <link rel="stylesheet" href="CSS/lightbox.css"/>
 </head>
 
 <body>
@@ -48,15 +50,25 @@ maximum-scale=1.0, user-scalable=no" />
     </a>
     <ul>
       <li><a href="/">home</a></li>
-      <li><a href="/gallery">gallery</a>
+      <!-- <li><a href="/gallery">gallery</a>
         <!-- <ul class="dropdown-menu">
           <li><a href="">Art Gallery</a></li>
           <li><a href="">Writing Gallery</a></li>
         </ul> -->
-      </li>
+      </li> 
       <li><a href="/events">events</a></li>
       <li><a href="/team">team</a></li>
       <li><a href="/contact">contact</a></li>
+      <div class="dropdown">
+        <button class="dropbtn">GALLERY
+          <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-content">
+          <a href="/writing">Writing Gallery</a>
+          <a href="/art">Art Gallery</a>
+          <a href="/event">Events Gallery</a>
+        </div>
+      </div>
     </ul>
     <button class="discord-btn" onclick="location.href='https://discord.gg/bnwztJDs';"><i
         style="color: white; margin-right: 1vh;" class="fab fa-discord"></i>JOIN</button>

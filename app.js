@@ -14,8 +14,14 @@ app.get("/", function(req,res){
     res.render("home")
 });
 
-app.get("/gallery", function(req,res){
-    res.render("gallery")
+app.get("/writing", function(req,res){
+    res.render("writing-gallery")
+});
+app.get("/art", function(req,res){
+    res.render("art-gallery")
+});
+app.get("/event", function(req,res){
+    res.render("event-gallery")
 });
 
 app.get("/events", function(req,res){
