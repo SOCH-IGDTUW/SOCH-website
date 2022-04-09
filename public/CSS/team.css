@@ -128,11 +128,7 @@ i:hover .linkedIn {
 
 .media:hover .team-img {
     filter: blur(0.5px) brightness(80%);
-<<<<<<< HEAD
     box-shadow:0 0 16px #C2E3EC;
-=======
-    box-shadow: 0 0 16px #C2E3EC;
->>>>>>> ba6ffeed21b6b2af1ede9a76c8278a2b7f4c672f
 }
 
 .media:hover .icon {
