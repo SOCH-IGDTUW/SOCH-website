@@ -12,7 +12,7 @@
         <div data-aos="fade-down" class="form_container">
             <h2>Contact Us</h2>
             <div style="background-color: var(--bright-pink);" class="underline"></div>
-            <form method="POST" action="/contact">
+            <form method="POST" data-email="soch.igdtuw@gmail.com" class="gform pure-form pure-form-stacked" action="https://script.google.com/macros/s/AKfycbxxduHkUO4fr9dvnXalblXNAb92k_srayK-nVlojiDrsTVRm8NdqabYvMxZsUq1Ri-Zlg/exec">
                 <div data-aos="zoom-in-up" class="form-group">
                     <label for="text">
                         <i class="fa-solid fa-pen"></i>
@@ -25,12 +25,12 @@
                         <input type="email" name="email" required placeholder="Enter Email" id="" />
                     </label>
                 </div>
-                <div data-aos="zoom-in-up" class="form-group">
+                <!-- <div data-aos="zoom-in-up" class="form-group">
                     <label for="text">
                         <i class="fa-solid fa-envelope-open-text"></i>
                         <input type="text" name="subject" required placeholder="Enter Subject" id="" />
                     </label>
-                </div>
+                </div> -->
                 <div data-aos="zoom-in-up" class="form-group">
                     <label>
                         <i class="fa-solid fa-message"></i>
@@ -42,4 +42,14 @@
             </form>
         </div>
     </div>
+    <div class="success">
+        <div class="pop-up">
+            <img src="Assets/tick.png" alt="Success">
+            <h1>Submitted!</h1>
+            <div class="underline"></div>
+            <h4>Form Submitted Successfully!</h4>
+          <button onclick="window.location.href = '/contact';" class="pop-btn">Okay!</button>
+        </div>
+    </div>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
     <%- include("partials/footer"); %>

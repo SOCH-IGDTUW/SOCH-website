@@ -1,46 +1,38 @@
 require('dotenv').config();
-const nodemailer = require("nodemailer");
+const SMTPClient = require("emailjs").SMTPClient;
+
 
 // mailer template
-const transporter = nodemailer.createTransport({
-  host: "smtp.gmail.com",
-  port: 587,
-  secure: true,
-  auth: {
-    user: process.env.EMAIL,
-    pass: process.env.PASSWORD,
-  },
+const client = new SMTPClient({
+	user: process.env.EMAIL,
+	password: process.env.PASSWORD,
+	host: 'smtp.your-email.com',
+	ssl: true,
+  tls: false
 });
-
-// verify connection configuration
-transporter.verify(function (error, success) {
-  if (error) {
-    console.log(error);
-  } else {
-    console.log("Server is ready to take our messages");
-  }
-});
-
-const mailOptions = {
-  from: "soch.igdtuw@gmail.com",
-  to: "anshigautam130@gmail.com",
-  subject: "Sending Email using Node.js",
-  text: "That was easy!",
-};
 
 exports.form = (req, res) => {
   const mail = {
     from: req.body.email,
     to: process.env.EMAIL,
     subject: req.body.subject,
-    text: `${req.body.name} <${req.body.email}> \n${req.body.message}`,
+    name: req.body.name,
+    text: `Name: ${req.body.name} <${req.body.email}> \nMessage: ${req.body.message}`,
   };
   console.log(mail);
-  transporter.sendMail(mailOptions, function (error, info) {
-    if (error) {
-      console.log(error);
-    } else {
-      console.log("Email sent: " + info.response);
-    }
+  client.send({
+    text: mail.text,
+    from: mail.from,
+    to: mail.to,
+    subject: mail.subject
+  }, (err, msg) =>{
+    console.log(err || msg);
+  })
+
+  emailjs.send("service_nnipceo","template_u54ppkg", {
+    from_email: mail.from,
+    message: mail.message,
+    from_name: mail.name,
+    subject: mail.subject
   });
 };

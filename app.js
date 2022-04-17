@@ -10,22 +10,42 @@ app.set('view engine', 'ejs');
 app.use(express.urlencoded({extended: true}));
 app.use(express.static("public"));
 
+mongoose.connect(process.env.MONGO_URL, { useNewUrlParser: true });
+
+//collections
+const Art = require("./models/art")
+const Write = require("./models/write")
+const EventGallery = require("./models/eventGallery")
+const Event = require("./models/event")
+
 app.get("/", function(req,res){
     res.render("home")
 });
 
 app.get("/writing", function(req,res){
-    res.render("writing-gallery")
+    Write.find({}, function (err, posts) {
+        if (!err) res.render("writing-gallery", { posts: posts });
+        else console.log(err);
+    });
 });
 app.get("/art", function(req,res){
-    res.render("art-gallery")
+    Art.find({}, function (err, arts) {
+        if (!err) res.render("art-gallery", { arts: arts });
+        else console.log(err);
+    });
 });
 app.get("/event", function(req,res){
-    res.render("event-gallery")
+    EventGallery.find({}, function (err, events) {
+        if (!err) res.render("event-gallery", { events: events });
+        else console.log(err);
+    });
 });
 
 app.get("/events", function(req,res){
-    res.render("events")
+    Event.find({}, function (err, events) {
+        if (!err) res.render("events", { events: events });
+        else console.log(err);
+    });
 });
 
 app.get("/team", function(req,res){
@@ -43,6 +63,6 @@ app.get("/calendar", function(req,res){
 app.post("/contact", contact.form);
 // const PORT = process.env.PORT || 3001
 const PORT = 3001
-app.listen(PORT, function(){
+app.listen(process.env.PORT || PORT, function(){
     console.log(`server stated on port ${PORT}`)
 })
