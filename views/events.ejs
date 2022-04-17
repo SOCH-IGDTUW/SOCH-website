@@ -24,33 +24,38 @@
         <div data-aos="fade-right" class="underline"></div>
         <h4 data-aos="fade-right">Know more about our past held events.</h4>
         <div class="event_container">
-            <% for(var i=0; i<6; i++) { %>
+            <% events.forEach(event => { %>
                 <div data-aos="fade-down" class="item-container">
                     <div class="img-container">
-                        <img src="/Assets/temp-event.png" alt="Event image" />
+                        <img src="https://drive.google.com/uc?export=view&id=<%= event.poster%>" alt="Event image" />
                     </div>
                     <div class="body-container">
                         <div class="overlay"></div>
                         <div class="event-info">
-                            <p class="title">Formidable Anecdote</p>
+                            <p class="title"><%= event.title %></p>
                             <div class="separator"></div>
-                            <p class="info">Story writing challenge</p>
-                            <p class="price">Free</p>
+                            <p class="info"><%= event.desc %></p>
+                            <p class="price">
+                                <% if(event.fee !=0) { %>
+                                    &#8377 <%= event.fee %>
+                                    <% } else { %>
+                                        Free
+                                        <% } %>
                             <div class="additional-info">
                                 <p class="info">
                                     <i class="fas fa-map-marker-alt"></i>
-                                    Google Meet
+                                    <%= event.venue %>
                                 </p>
                                 <p class="info">
                                     <i class="far fa-calendar-alt"></i>
-                                    Sat, Sep 19, 10:00 AM
+                                    <%= event.schedule %>
                                 </p>
                             </div>
                         </div>
-                        <button class="action">Register</button>
+                        <button class="action" onclick="location.href='<%= event.link %>';">Register</button>
                     </div>
                 </div>
-                <% } %>
+                <% }) %>
         </div>
     </div>
     <%- include("partials/footer"); %>

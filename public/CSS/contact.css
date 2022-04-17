@@ -87,6 +87,54 @@ form{
     background-color: var(--bright-pink);
 }
 
+.success{
+    width: 100vw;
+    height: 100vh;
+    background-color: #504c8166;
+    backdrop-filter: blur(5px);
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+
+.success .pop-up{
+    width: 40%;
+    border-radius: 1vw;
+    background-color: white;
+    padding: 5vw;
+    text-align: center;
+}
+
+.pop-up img{
+    width: 7vw;
+}
+
+.pop-btn{
+    width: 80%;
+    background-color: var(--purple);
+    border: none;
+    font-family: var(--font-sans);
+    margin: 1vw 0 0;
+    font-size: 1rem;
+    color: white;
+    border-radius: .5vw;
+    padding: 1vw 0;
+    text-transform: uppercase;
+    transition: .5s;
+    cursor: pointer;
+}
+
+.success.show{
+    display: flex;
+}
+
+.pop-btn:hover{
+  box-shadow: 0px 13px 20px -10px rgba(0, 0, 0, 0.404);
+}
+
 @media (max-width: 1024px) {
     .message-illust {
         width: 80%;
@@ -95,5 +143,15 @@ form{
     }
     .form_container {
         width: 90%;
+    }
+    .success .pop-up{
+        width: 80%;
+        border-radius: 3vw;
+    }
+    .pop-up img{
+        width: 35vw;
+    }
+    .pop-up h1{
+        font-size: 1.2rem;
     }
 }
