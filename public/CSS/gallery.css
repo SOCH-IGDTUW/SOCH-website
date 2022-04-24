@@ -48,7 +48,8 @@
 }
 
 .gallery img {
-  width: 100%;
+  width: 20vw;
+  height: 20vw;
   transition: 1s;
   filter: grayscale(70%);
 }
