@@ -14,7 +14,7 @@
         <% } else { %> 
         <% events.forEach(event => { %>
             <a href="https://drive.google.com/uc?export=view&id=<%= event.thumbnail%>" data-lightbox="art" data-title="<%=event.title%>">
-                <img src="https://drive.google.com/uc?export=view&id=<%= event.thumbnail%>">
+                <img loading="lazy" src="https://drive.google.com/uc?export=view&id=<%= event.thumbnail%>">
             </a>
         <% }) }%> 
     </div>
