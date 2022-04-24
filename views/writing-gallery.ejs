@@ -14,7 +14,7 @@
         <% } else { %> 
         <% posts.forEach(post => { %>
             <a href="https://drive.google.com/uc?export=view&id=<%= post.content%>" data-lightbox="art" data-title="By <%= post.author %>">
-                <img src="https://drive.google.com/uc?export=view&id=<%= post.content%>">
+                <img loading="lazy" src="https://drive.google.com/uc?export=view&id=<%= post.content%>">
             </a>
         <% }) }%> 
     </div>
