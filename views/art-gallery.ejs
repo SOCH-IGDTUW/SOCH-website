@@ -12,7 +12,7 @@
         <% if(arts.length == 0) { %> 
             <p>Nothing to see here, come back Later. 👋</p>
         <% } else { %> 
-            <% arts.forEach(art => { %>
+            <% arts.slice().reverse().forEach(art => { %>
                 <a href="https://drive.google.com/uc?export=view&id=<%= art.image%>" data-lightbox="art" data-title="By <%= art.artist %>">
                     <img loading="lazy" src="https://drive.google.com/uc?export=view&id=<%= art.image%>">
                 </a>

@@ -12,7 +12,7 @@
         <% if(events.length == 0) { %> 
             <p>Nothing to see here, come back Later. 👋</p>
         <% } else { %> 
-        <% events.forEach(event => { %>
+        <% events.slice().reverse().forEach(event => { %>
             <a href="https://drive.google.com/uc?export=view&id=<%= event.thumbnail%>" data-lightbox="art" data-title="<%=event.title%>">
                 <img loading="lazy" src="https://drive.google.com/uc?export=view&id=<%= event.thumbnail%>">
             </a>
