@@ -10,7 +10,7 @@
 
         <div class="gallery">
         <% if(arts.length == 0) { %> 
-            Nothing to see here, come back Later. 👋
+            <p>Nothing to see here, come back Later. 👋</p>
         <% } else { %> 
             <% arts.forEach(art => { %>
                 <a href="https://drive.google.com/uc?export=view&id=<%= art.image%>" data-lightbox="art" data-title="By <%= art.artist %>">

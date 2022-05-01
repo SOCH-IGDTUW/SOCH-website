@@ -10,7 +10,7 @@
         
     <div class="gallery">
         <% if(events.length == 0) { %> 
-            Nothing to see here, come back Later. 👋
+            <p>Nothing to see here, come back Later. 👋</p>
         <% } else { %> 
         <% events.forEach(event => { %>
             <a href="https://drive.google.com/uc?export=view&id=<%= event.thumbnail%>" data-lightbox="art" data-title="<%=event.title%>">

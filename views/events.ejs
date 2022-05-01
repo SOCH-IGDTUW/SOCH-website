@@ -24,7 +24,7 @@
         <div data-aos="fade-right" class="underline"></div>
         <h4 data-aos="fade-right">Know more about our recent & past held events.</h4>
         <div class="event_container">
-            <% events.forEach(event => { %>
+            <% events.slice().reverse().forEach(event => { %>
                 <div data-aos="fade-down" class="item-container">
                     <div class="img-container">
                         <img loading="lazy" src="https://drive.google.com/uc?export=view&id=<%= event.poster%>" alt="Event image" />
