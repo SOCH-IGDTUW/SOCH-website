@@ -19,6 +19,22 @@ $(document).ready(function () {
         type: "event",
         color: "#63d867", // Event custom color (optional)
       },
+      {
+        name: "Wall Painting",
+        badge: "", // Event badge (optional)
+        date: ["June/04/2022", "June/04/2022"], // Date range
+        description: "Near Canteen inside college campus", // Event description (optional)
+        type: "event",
+        color: "#63d867", // Event custom color (optional)
+      },
+      {
+        name: "Plein Air",
+        badge: "Lodhi Garden", // Event badge (optional)
+        date: ["June/12/2022", "June/12/2022"], // Date range
+        description: "Registration Fee: ₹50", // Event description (optional)
+        type: "event",
+        color: "#63d867", // Event custom color (optional)
+      },
     ],
   });
 });
