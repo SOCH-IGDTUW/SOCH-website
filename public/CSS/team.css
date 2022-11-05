@@ -175,6 +175,14 @@ i:hover .linkedIn {
     margin-top: 5px;
   }
 
+  #head1 {
+    margin-right: 50px;
+  }
+
+  #head2 {
+    margin-left: 50px;
+  }
+
   .team-row-member {
     border-bottom: none;
     padding: 8px 35px;

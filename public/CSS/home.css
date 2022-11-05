@@ -16,7 +16,7 @@ main {
   height: fit-content;
   width: 50%;
   box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5);
-  /* border-radius: 15px; */
+  border-radius: 15px;
   border-top: 3px solid rgba(255, 255, 255, 0.5);
   border-left: 3px solid rgba(255, 255, 255, 0.5);
   /* backdrop-filter: blur(15px); */
@@ -102,12 +102,67 @@ main {
 
 /* ============== HEADER =============== */
 
+#slider {
+  overflow: hidden;
+}
+
+#slider figure {
+  position: relative;
+  width: 500%;
+  margin: 0;
+  left: 0;
+  animation: 20s slider infinite;
+}
+
+#slider figure img {
+  width: 20%;
+  float: left;
+}
+
+@keyframes slider {
+  0% {
+    left: 0;
+  }
+
+  20% {
+    left: 0;
+  }
+
+  25% {
+    left: -100%;
+  }
+
+  45% {
+    left: -100%;
+  }
+
+  50% {
+    left: -200%;
+  }
+
+  70% {
+    left: -200%;
+  }
+
+  75% {
+    left: -300%;
+  }
+
+  95% {
+    left: -300%;
+  }
+
+  100% {
+    left: -400%;
+  }
+}
+
+
 .heading {
   text-align: center;
   background-image: url("/Assets/SOCH-bg-final.png");
   min-height: 100vh;
   background-size: cover;
-  /* background-repeat: no-repeat; */
   display: flex;
 }
 
@@ -134,11 +189,13 @@ main {
 
 .head-content {
   color: var(--dark-blue);
-  /* color: white; */
   font-family: var(--font-sans);
   height: 50vh;
   margin: auto;
-  position: relative;
+  /* position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); */
 }
 
 .head-text {
