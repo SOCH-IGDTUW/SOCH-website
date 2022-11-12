@@ -1,17 +1,19 @@
 <%- include("partials/header"); %>
     <main>
 
-        <!-- <div id="PopUp" data-aos="zoom-in">
-            <button class="close-button" onclick="toggle()">&times;</button>
+        <div id="PopUp" data-aos="zoom-in">
+            <button class="close-button" onclick="togglePopUp()">&times;</button>
             <div class="PopUp-content">
-                <h3>Monochromatic Painting</h3>
-                <img src="/Assets/dummy.png" alt="" height="250px">
-                <div class="separator"></div>
-                <a href="https://forms.gle/iCYbZ6SVwqrixPTi9">
+                <h3>Soch 2022-23 Orientation</h3>
+                <img src="https://drive.google.com/uc?export=view&id=1mTAlom7WxbJJ7Ks-t7JN6UxOKe1tZjgD" alt=""
+                    height="350px">
+                <!-- <div class="separator"></div> -->
+                <!-- <a href="https://forms.gle/iCYbZ6SVwqrixPTi9">
                     <button>Register Now</button>
-                </a>
+                </a> -->
+                <p style="color: var(--bright-pink); margin-bottom: 20px;">We hope to see you there!</p>
             </div>
-        </div> -->
+        </div>
 
         <div class="heading">
             <div data-aos="fade-right" class="head-content">
@@ -133,20 +135,5 @@
             <div class="loader"></div>
         </div>
     </main>
-    <script>
-        const showPopUp = () => {
-            const popup = document.getElementById("PopUp");
-            setTimeout(() => {
-                popup.style.display = "flex";
-            }, 1000);
-        };
 
-        const toggle = () => {
-            const popup = document.getElementById("PopUp");
-            console.log(popup);
-            popup.style.display = "none";
-        };
-
-        showPopUp();
-    </script>
     <%- include("partials/footer"); %>
