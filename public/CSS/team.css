@@ -31,6 +31,7 @@
   position: absolute;
   left: 38%;
   bottom: 10%;
+  /* margin: 30px 0; */
 }
 
 .team-table {
@@ -42,7 +43,7 @@
 }
 
 .team-row {
-  padding: 20px 30px;
+  padding: 10px 30px;
   max-width: 80%;
   display: flex;
   flex-direction: column;
@@ -79,7 +80,7 @@
 .pos {
   font-size: 1.75rem;
   font-weight: 800;
-  margin-top: 30px;
+  margin-top: 10px;
   color: #6f69ac;
   padding: 0.75rem 4rem;
   border-bottom: 3px solid #6f69ac;
@@ -117,7 +118,7 @@
 
 .media {
   position: relative;
-  margin-bottom: 25px;
+  margin-bottom: 20px;
   transition: 1s;
 }
 
@@ -139,10 +140,12 @@ i:hover .linkedIn {
   from {
     opacity: 0;
   }
+
   to {
     opacity: 1;
   }
 }
+
 @-webkit-keyframes fadein {
   from {
     opacity: 0;
@@ -159,16 +162,25 @@ i:hover .linkedIn {
     width: 60%;
     left: 17%;
   }
-  .team-table{
-      margin-top: 20vw;
+
+  .team-table {
+    margin-top: 20vw;
   }
 }
 
 @media (min-width: 900px) {
   .team-row {
     flex-direction: row;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
     margin-top: 5px;
+  }
+
+  #head1 {
+    margin-right: 50px;
+  }
+
+  #head2 {
+    margin-left: 50px;
   }
 
   .team-row-member {
@@ -192,7 +204,7 @@ i:hover .linkedIn {
 
   .pos {
     font-size: 1.75rem;
-    margin-top: 20px;
+    margin-top: 10px;
     border-bottom: 3px solid #6f69ac;
     border-bottom-width: 80%;
   }

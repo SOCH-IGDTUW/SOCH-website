@@ -4,45 +4,205 @@ main {
   min-height: 100vh;
 }
 
+/* ============== POP UP =============== */
+
+#PopUp {
+  z-index: 1500;
+  position: fixed;
+  top: 50%;
+  background-color: white;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: fit-content;
+  width: 50%;
+  box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5);
+  border-radius: 15px;
+  border-top: 3px solid rgba(255, 255, 255, 0.5);
+  border-left: 3px solid rgba(255, 255, 255, 0.5);
+  /* backdrop-filter: blur(15px); */
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  display: none;
+  font-family: var(--font-sans);
+}
+
+#PopUp img {
+  margin-bottom: 20px;
+}
+
+#PopUp .PopUp-content {
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#PopUp .PopUp-content h3 {
+  font-weight: bold;
+  margin-top: 30px;
+  padding: 30px 0 10px 0;
+  font-size: 1.5rem;
+  color: var(--purple);
+}
+
+.separator {
+  width: 40%;
+  height: 0.2vw;
+  background-color: var(--bright-pink);
+  margin: 10px 0 6px 0;
+}
+
+#PopUp .PopUp-content button {
+  background-color: #504C81;
+  font-weight: 700;
+  border: none;
+  padding: 10px 15px;
+  cursor: pointer;
+  margin: 10px 0 30px 0;
+  color: white;
+  transition: all 0.3s ease-in-out;
+}
+
+#PopUp .PopUp-content button:hover {
+  background-color: #470886;
+}
+
+@media screen and (max-width: 768px) {
+  #PopUp {
+    width: 80%;
+  }
+}
+
+.close-button {
+  position: absolute;
+  right: 20px;
+  top: 10px;
+  background: transparent;
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+  font-size: 25px;
+  font-weight: 600;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  transition: all 0.3s ease;
+}
+
+.close-button:hover {
+  transform: scale(1.05);
+  transform: translateY(-1px);
+}
+
 /* ============== HEADER =============== */
+
+#slider {
+  overflow: hidden;
+}
+
+#slider figure {
+  position: relative;
+  width: 500%;
+  margin: 0;
+  left: 0;
+  animation: 20s slider infinite;
+}
+
+#slider figure img {
+  width: 20%;
+  float: left;
+}
+
+@keyframes slider {
+  0% {
+    left: 0;
+  }
+
+  20% {
+    left: 0;
+  }
+
+  25% {
+    left: -100%;
+  }
+
+  45% {
+    left: -100%;
+  }
+
+  50% {
+    left: -200%;
+  }
+
+  70% {
+    left: -200%;
+  }
+
+  75% {
+    left: -300%;
+  }
+
+  95% {
+    left: -300%;
+  }
+
+  100% {
+    left: -400%;
+  }
+}
+
 
 .heading {
   text-align: center;
   background-image: url("/Assets/SOCH-bg-final.png");
   min-height: 100vh;
   background-size: cover;
-  /* background-repeat: no-repeat; */
   display: flex;
 }
+
 .heading h1,
 .heading p,
 .heading h4 {
   margin: 0;
   font-weight: 700;
 }
+
 .heading h1 {
   font-size: 3rem;
   margin-bottom: 2vh;
   letter-spacing: 4px;
 }
-.main-banner{
+
+.main-banner {
   width: 40vw;
 }
+
 .heading p {
   font-weight: 500;
 }
+
 .head-content {
   color: var(--dark-blue);
-  /* color: white; */
   font-family: var(--font-sans);
   height: 50vh;
   margin: auto;
-  position: relative;
+  /* position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); */
 }
+
 .head-text {
   position: relative;
   z-index: 2;
 }
+
 .stroke {
   fill: var(--dark-blue);
   position: absolute;
@@ -52,6 +212,7 @@ main {
   height: 100%;
   z-index: 1;
 }
+
 .underline {
   height: 0.2vw;
   width: 10vh;
@@ -59,6 +220,7 @@ main {
   display: block;
   background-color: #81b1c0;
 }
+
 .heading h3 {
   color: #81b1c0;
 }
@@ -68,21 +230,24 @@ main {
 .banner {
   margin: auto;
   /* height: 90vh; */
-  width: 80%;  
+  width: 80%;
   text-align: center;
   margin: 5vh auto;
   min-height: 70vh;
 }
-.banner-container{
+
+.banner-container {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
   margin: 15vh 0;
 }
-.banner1{
+
+.banner1 {
   background: url("/Assets/home-illust2.png");
 }
-.banner-content{
+
+.banner-content {
   background-color: white;
   width: 50%;
   height: 60%;
@@ -94,11 +259,13 @@ main {
   font-weight: 600;
   font-size: 1rem;
 }
-.banner2{
+
+.banner2 {
   background: url("/Assets/home-illust3.png");
 }
+
 .banner1,
-.banner2{
+.banner2 {
   width: 25vw;
   height: 25vw;
   background-size: contain;
@@ -106,20 +273,22 @@ main {
   justify-content: center;
   align-items: center;
 }
-.banner-content h3{
+
+.banner-content h3 {
   font-weight: 600;
   font-family: var(--font-sans);
   font-size: 1.1rem;
 }
 
 /* =========== TEAMS =========== */
-.teams{
+.teams {
   text-align: center;
   width: 80%;
   margin: 5vh auto 0;
   min-height: 70vh;
   position: relative;
 }
+
 .teams h1,
 .about-container h1,
 .banner h1,
@@ -130,6 +299,7 @@ main {
   font-weight: 600;
   margin: 0;
 }
+
 .teams h4,
 .about-container h4,
 .banner h4,
@@ -139,6 +309,7 @@ main {
   color: #c2e3ec;
   font-weight: 500;
 }
+
 .team-cards {
   background-color: white;
   margin: 0 auto;
@@ -147,10 +318,12 @@ main {
   position: absolute;
   padding: 8% 3vw;
 }
+
 .team-card-wrap {
   display: flex;
   justify-content: space-evenly;
 }
+
 .know-btn {
   background: var(--bright-pink);
   border: none;
@@ -165,16 +338,20 @@ main {
   cursor: pointer;
   transition: background .5s;
 }
+
 .know-btn:hover {
   background: var(--purple);
 }
+
 .team-icon {
   width: 15vh;
 }
+
 .team-card {
   flex: 4;
   padding: 0 2vh;
 }
+
 .team-card h5 {
   color: var(--bright-pink);
   font-family: var(--font-round);
@@ -182,6 +359,7 @@ main {
   font-weight: 600;
   margin: 2vh 0;
 }
+
 .team-card p {
   color: var(--dark-blue);
   font-family: var(--font-sans);
@@ -195,6 +373,7 @@ main {
   background-color: var(--dark-blue);
   min-height: 90vh;
 }
+
 .about .about-container {
   width: 90%;
   text-align: center;
@@ -202,21 +381,26 @@ main {
   margin: 0 auto;
   color: white;
 }
+
 .about-container h1 {
   font-weight: 600;
   color: white;
 }
+
 .about__illust {
   width: 30vw;
   height: 100%;
 }
+
 .about-wrap {
   margin-top: 10vh;
 }
+
 .about-con {
   display: flex;
   justify-content: space-between;
 }
+
 .about-con p {
   background: white;
   color: var(--dark-blue);
@@ -228,12 +412,13 @@ main {
   height: 100%;
   padding: 4% 4% 3%;
 }
+
 .about-con p::first-letter {
   font-size: 1.5rem;
   font-weight: bold;
 }
 
-.event-banner{
+.event-banner {
   width: 40%;
   margin: 0 auto;
   background-color: var(--light-blue);
@@ -242,7 +427,7 @@ main {
   text-align: center;
 }
 
-.event-banner h4{
+.event-banner h4 {
   color: var(--dark-blue);
   margin-bottom: 2vw;
 }
@@ -253,28 +438,36 @@ main {
   .team-card-wrap {
     flex-direction: column;
   }
+
   .about-con {
     flex-direction: column;
   }
+
   .about__illust,
-  .about-con p{
+  .about-con p {
     width: auto;
   }
+
   .about .about-container {
     padding-top: 110vh;
   }
+
   .underline {
     height: 0.6vw;
   }
-  .banner-container{
+
+  .banner-container {
     flex-direction: column;
     gap: 10vh;
   }
-  .banner1, .banner2{
+
+  .banner1,
+  .banner2 {
     width: 100%;
     height: 50vh;
   }
-  .event-banner{
+
+  .event-banner {
     width: 80%;
     padding: 5%;
   }

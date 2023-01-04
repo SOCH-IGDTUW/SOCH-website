@@ -1,5 +1,20 @@
 <%- include("partials/header"); %>
     <main>
+
+        <div id="PopUp" data-aos="zoom-in">
+            <button class="close-button" onclick="togglePopUp()">&times;</button>
+            <div class="PopUp-content">
+                <h3>Soch 2022-23 Orientation</h3>
+                <img src="https://drive.google.com/uc?export=view&id=1mTAlom7WxbJJ7Ks-t7JN6UxOKe1tZjgD" alt=""
+                    height="350px">
+                <!-- <div class="separator"></div> -->
+                <!-- <a href="https://forms.gle/iCYbZ6SVwqrixPTi9">
+                    <button>Register Now</button>
+                </a> -->
+                <p style="color: var(--bright-pink); margin-bottom: 20px;">We hope to see you there!</p>
+            </div>
+        </div>
+
         <div class="heading">
             <div data-aos="fade-right" class="head-content">
                 <div class="head-text">
@@ -10,6 +25,26 @@
                 </div>
             </div>
         </div>
+        <!-- <div class="heading">
+            <div id="slider">
+                <figure>
+                    <img src="Assets/SOCH-bg-final.png" alt="">
+                    <img src="Assets/SOCH-bg-final.png" alt="">
+                    <img src="Assets/SOCH-bg-final.png" alt="">
+                    <img src="Assets/SOCH-bg-final.png" alt="">
+                    <img src="Assets/SOCH-bg-final.png" alt="">
+                </figure>
+                <div class="head-content">
+                    <div class="head-text">
+                        <h1>SOCH</h1>
+                        <h4>Station of Creativity and Hue</h4>
+                        <span class="underline"></span>
+                        <p>The Art 🎨 and Writing ✍ Society of IGDTUW.</p>
+                    </div>
+                </div>
+            </div>
+        </div> -->
+
         <div class="teams">
             <h1 data-aos="fade-right">Our Teams</h1>
             <span data-aos="fade-right" class="underline"></span>
@@ -93,11 +128,12 @@
             <h1 data-aos="fade-right">Formidable Anecdote</h1>
             <div data-aos="fade-right" class="underline"></div>
             <h4 data-aos="fade-right">Here are all the stories written during this event.</h4>
-            <iframe loading="lazy" src="https://drive.google.com/file/d/1_W8h1J9zRbhaq5uAwmLJWyqDxQa5hx2T/preview" style="width: 100%;"
-                height="400" allow="autoplay"></iframe>
+            <iframe loading="lazy" src="https://drive.google.com/file/d/1_W8h1J9zRbhaq5uAwmLJWyqDxQa5hx2T/preview"
+                style="width: 100%;" height="400" allow="autoplay"></iframe>
         </div>
         <div class="loader_wrapper">
             <div class="loader"></div>
         </div>
     </main>
-<%- include("partials/footer"); %>
+
+    <%- include("partials/footer"); %>

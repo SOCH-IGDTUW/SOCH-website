@@ -24,35 +24,42 @@
         <div data-aos="fade-right" class="underline"></div>
         <h4 data-aos="fade-right">Know more about our recent & past held events.</h4>
         <div class="event_container">
-            <% events.slice().reverse().forEach(event => { %>
+            <% events.slice().reverse().forEach(event=> { %>
                 <div data-aos="fade-down" class="item-container">
                     <div class="img-container">
-                        <img loading="lazy" src="https://drive.google.com/uc?export=view&id=<%= event.poster%>" alt="Event image" />
+                        <img loading="lazy" src="https://drive.google.com/uc?export=view&id=<%= event.poster%>"
+                            alt="Event image" />
                     </div>
                     <div class="body-container">
                         <div class="overlay"></div>
                         <div class="event-info">
-                            <p class="title"><%= event.title %></p>
+                            <p class="title">
+                                <%= event.title %>
+                            </p>
                             <div class="separator"></div>
-                            <p class="info"><%= event.desc %></p>
+                            <p class="info">
+                                <%= event.desc %>
+                            </p>
                             <p class="price">
                                 <% if(event.fee !=0) { %>
                                     &#8377 <%= event.fee %>
-                                    <% } else { %>
-                                        Free
-                                        <% } %>
-                            <div class="additional-info">
-                                <p class="info">
-                                    <i class="fas fa-map-marker-alt"></i>
-                                    <%= event.venue %>
-                                </p>
-                                <p class="info">
-                                    <i class="far fa-calendar-alt"></i>
-                                    <%= event.schedule %>
-                                </p>
-                            </div>
+                                        <% } else { %>
+                                            Free
+                                            <% } %>
+                                                <div class="additional-info">
+                                                    <p class="info">
+                                                        <i class="fas fa-map-marker-alt"></i>
+                                                        <%= event.venue %>
+                                                    </p>
+                                                    <p class="info">
+                                                        <i class="far fa-calendar-alt"></i>
+                                                        <%= event.schedule %>
+                                                    </p>
+                                                </div>
                         </div>
-                        <button class="action" onclick="location.href='<%= event.link %>';">Register</button>
+                        <% if(event.link!=="-" ) { %>
+                            <button class="action" onclick="location.href='<%= event.link %>';">Register</button>
+                            <% } %>
                     </div>
                 </div>
                 <% }) %>
