@@ -60,6 +60,10 @@ app.get("/calendar", function (req, res) {
     res.render("calendar")
 });
 
+app.get("/form", function (req, res) {
+    res.render("form")
+});
+
 app.post("/contact", contact.form);
 // const PORT = process.env.PORT || 3001
 const PORT = 3001
