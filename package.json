@@ -2,12 +2,12 @@
   "name": "soch-igdtuw",
   "version": "1.0.0",
   "description": "SOCH IGDTUW",
-  "main": "app.js",
+  "main": "index.js",
   "engines": {
     "node": "16.x"
   },
   "scripts": {
-    "start": "node app.js"
+    "start": "node index.js"
   },
   "repository": {
     "type": "git",
