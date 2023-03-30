@@ -10,6 +10,7 @@ app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'ejs');
 
 app.use(express.urlencoded({ extended: true }));
+app.set('public', path.join(__dirname, 'public'));
 app.use(express.static("public"));
 
 mongoose.connect(process.env.MONGO_URL, { useNewUrlParser: true });
