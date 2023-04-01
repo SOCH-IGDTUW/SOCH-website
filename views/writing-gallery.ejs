@@ -10,14 +10,17 @@
         
     <div class="gallery">
         <% if(posts.length == 0) { %> 
-            Nothing to see here, come back Later. 👋
+            <p>Nothing to see here, come back Later. 👋</p>
         <% } else { %> 
-        <% posts.forEach(post => { %>
+        <% posts.slice().reverse().forEach(post => { %>
             <a href="https://drive.google.com/uc?export=view&id=<%= post.content%>" data-lightbox="art" data-title="By <%= post.author %>">
-                <img src="https://drive.google.com/uc?export=view&id=<%= post.content%>">
+                <img loading="lazy" src="https://drive.google.com/uc?export=view&id=<%= post.content%>">
             </a>
         <% }) }%> 
     </div>
+</div>
+<div class="loader_wrapper">
+    <div class="loader"></div>
 </div>
 <script src="JS/lightbox-plus-jquery.js"></script>
 

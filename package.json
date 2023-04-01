@@ -1,11 +1,13 @@
 {
   "name": "soch-igdtuw",
   "version": "1.0.0",
-  "description": "<hr>",
-  "main": "app.js",
+  "description": "SOCH IGDTUW",
+  "main": "index.js",
+  "engines": {
+    "node": "16.x"
+  },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "nodemon app.js"
+    "start": "node index.js"
   },
   "repository": {
     "type": "git",

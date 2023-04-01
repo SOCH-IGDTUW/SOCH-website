@@ -10,14 +10,17 @@
         
     <div class="gallery">
         <% if(events.length == 0) { %> 
-            Nothing to see here, come back Later. 👋
+            <p>Nothing to see here, come back Later. 👋</p>
         <% } else { %> 
-        <% events.forEach(event => { %>
+        <% events.slice().reverse().forEach(event => { %>
             <a href="https://drive.google.com/uc?export=view&id=<%= event.thumbnail%>" data-lightbox="art" data-title="<%=event.title%>">
-                <img src="https://drive.google.com/uc?export=view&id=<%= event.thumbnail%>">
+                <img loading="lazy" src="https://drive.google.com/uc?export=view&id=<%= event.thumbnail%>">
             </a>
         <% }) }%> 
     </div>
+</div>
+<div class="loader_wrapper">
+    <div class="loader"></div>
 </div>
 <script src="JS/lightbox-plus-jquery.js"></script>
 

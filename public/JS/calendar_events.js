@@ -12,10 +12,26 @@ $(document).ready(function () {
         everyYear: true, // Same event every year (optional)
       },
       {
-        name: "Vacation Leave",
-        badge: "02/13 - 02/15", // Event badge (optional)
-        date: ["February/13/2022", "February/15/2022"], // Date range
-        description: "Vacation leave for 3 days.", // Event description (optional)
+        name: "Writing Workshop",
+        badge: "05/29", // Event badge (optional)
+        date: ["May/29/2022", "May/29/2022"], // Date range
+        description: "Writing Workshop by Aashvi Shah", // Event description (optional)
+        type: "event",
+        color: "#63d867", // Event custom color (optional)
+      },
+      {
+        name: "Wall Painting",
+        badge: "", // Event badge (optional)
+        date: ["June/04/2022", "June/04/2022"], // Date range
+        description: "Near Canteen inside college campus", // Event description (optional)
+        type: "event",
+        color: "#63d867", // Event custom color (optional)
+      },
+      {
+        name: "Plein Air",
+        badge: "Lodhi Garden", // Event badge (optional)
+        date: ["June/12/2022", "June/12/2022"], // Date range
+        description: "Registration Fee: ₹50", // Event description (optional)
         type: "event",
         color: "#63d867", // Event custom color (optional)
       },
