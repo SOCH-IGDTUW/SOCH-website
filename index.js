@@ -1,5 +1,6 @@
 const express = require("express");
 const ejs = require("ejs");
+const path = require('path');
 const mongoose = require('mongoose');
 const path = require('path');
 const contact = require('./routes/contact');
@@ -7,14 +8,12 @@ const contact = require('./routes/contact');
 const app = express();
 
 app.set('views', path.join(__dirname, 'views'));
-app.set('public', path.join(__dirname, "public"))
 app.set('view engine', 'ejs');
 
 app.use(express.urlencoded({ extended: true }));
+app.set('public', path.join(__dirname, 'public'));
 app.use(express.static("public"));
 
-console.log("__dirname: ", __dirname);
-console.log("public path: ", path.join(__dirname, "public"));
 
 mongoose.connect(process.env.MONGO_URL, { useNewUrlParser: true });
 
