@@ -2,7 +2,6 @@ const express = require("express");
 const ejs = require("ejs");
 const path = require('path');
 const mongoose = require('mongoose');
-const path = require('path');
 const contact = require('./routes/contact');
 
 const app = express();
