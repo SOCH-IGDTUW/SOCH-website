@@ -72,5 +72,5 @@ app.post("/contact", contact.form);
 // const PORT = process.env.PORT || 3001
 const PORT = 3001
 app.listen(process.env.PORT || PORT, function () {
-    console.log(`server stated on port ${PORT}`)
+    console.log(`server started on port ${PORT}`)
 })
