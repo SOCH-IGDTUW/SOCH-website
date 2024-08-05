@@ -6,10 +6,10 @@
     position: relative;
 }
 .message-illust {
-    width: 55%;
+    width: 45%;
     position: absolute;
-    bottom: -27vh;
-    left: 24%;
+    bottom: -18vh;
+    left: 28%;
 }
 .contact_banner h1, .contact_banner h6,
 .events__top h1, .events__top h6 ,
@@ -31,7 +31,7 @@
 }
 .form_container{
     width: 40%;
-    margin: 23vh auto 8vh;
+    margin: 18vh auto 8vh;
     text-align: center;
     border-radius: 4vh;
     padding: 2% 0;

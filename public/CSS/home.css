@@ -427,7 +427,7 @@ main {
   margin: 0 auto;
   background-color: var(--light-blue);
   border-radius: 2vw 2vw 0 0;
-  padding: 2vw 10% 0;
+  padding: 2vw 10% 5%;
   text-align: center;
 }
 

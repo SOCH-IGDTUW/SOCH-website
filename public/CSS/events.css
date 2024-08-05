@@ -15,30 +15,30 @@
 .events__top {
   background-image: url("../Assets/contact-top.png");
   width: 100%;
-  height: 45vh;
+  height: 40vh;
   background-size: cover;
   color: var(--dark-blue);
 }
 
 .events__top h1,
 .gallery__top h1 {
-  padding-top: 10vh;
+  padding-top: 0vh;
 }
 
 .emoji_container {
   position: absolute;
-  bottom: 35%;
-  left: 28%;
+  bottom: 55%;
+  left: 35%;
 }
 
 .emoji_container>img {
-  width: 15vw;
+  width: 10vw;
 }
 
 .outer-calendar h1,
 .events>h1 {
   text-align: center;
-  margin-top: 16vh;
+  margin-top: 2vh;
 }
 
 .outer-calendar h4,
